@@ -1,0 +1,80 @@
+/** @type {import('tailwindcss').Config} */
+
+export default {
+  darkMode: "class",
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+  theme: {
+    container: {
+      center: true,
+    },
+    extend: {
+      colors: {
+        brand: {
+          50: '#E8F2FB',
+          100: '#C5DEF5',
+          200: '#8BBDEB',
+          300: '#519CE1',
+          400: '#1E7AC4',
+          500: '#0F5FA8',
+          600: '#0B4A85',
+          700: '#083866',
+          800: '#052744',
+          900: '#021627',
+        },
+        accent: {
+          50: '#EAF7EC',
+          100: '#CDEAD2',
+          200: '#9BD5A5',
+          300: '#6AC078',
+          400: '#43B255',
+          500: '#2A8F3C',
+          600: '#1F6F2D',
+          700: '#175021',
+          800: '#0F3616',
+          900: '#061D0A',
+        },
+        signal: {
+          50: '#FEF3E7',
+          100: '#FCE0C2',
+          200: '#F9C184',
+          300: '#F6A247',
+          400: '#F39C3D',
+          500: '#D77E1E',
+          600: '#A45F15',
+          700: '#72420E',
+          800: '#412507',
+          900: '#1B0E02',
+        },
+        ink: {
+          50: '#F6F7F9',
+          100: '#E8EAEE',
+          200: '#C9CED7',
+          300: '#8E97A6',
+          400: '#5C6678',
+          500: '#3B4456',
+          600: '#27313F',
+          700: '#1A212C',
+          800: '#10161F',
+          900: '#080C12',
+        },
+      },
+      fontFamily: {
+        sans: ['"PingFang SC"', '"Microsoft YaHei"', '"Helvetica Neue"', 'Helvetica', 'Arial', 'sans-serif'],
+        display: ['"PingFang SC"', '"Microsoft YaHei"', '"Helvetica Neue"', 'sans-serif'],
+      },
+      animation: {
+        'fade-in': 'fadeIn 0.8s ease-out forwards',
+        'fade-in-up': 'fadeInUp 0.8s ease-out forwards',
+        'slide-in-left': 'slideInLeft 0.8s ease-out forwards',
+        'slide-in-right': 'slideInRight 0.8s ease-out forwards',
+      },
+      keyframes: {
+        fadeIn: { '0%': { opacity: '0' }, '100%': { opacity: '1' } },
+        fadeInUp: { '0%': { opacity: '0', transform: 'translateY(30px)' }, '100%': { opacity: '1', transform: 'translateY(0)' } },
+        slideInLeft: { '0%': { opacity: '0', transform: 'translateX(-50px)' }, '100%': { opacity: '1', transform: 'translateX(0)' } },
+        slideInRight: { '0%': { opacity: '0', transform: 'translateX(50px)' }, '100%': { opacity: '1', transform: 'translateX(0)' } },
+      },
+    },
+  },
+  plugins: [],
+};
