@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useEffect } from 'react';
 import PageHero from '../components/PageHero';
 import { IMAGES } from '../assets/images';
 import { Award, Target, Lightbulb, Handshake, Shield } from 'lucide-react';
@@ -27,9 +27,7 @@ const honors = [
 ];
 
 export default function About() {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
+  useEffect(() => { window.scrollTo(0, 0); }, []);
 
   return (
     <div>
@@ -88,7 +86,6 @@ export default function About() {
             <div className="text-sm text-brand-500 font-medium mb-4 tracking-wider">TIMELINE</div>
             <h2 className="text-4xl lg:text-5xl font-bold text-ink-900">发展历程</h2>
           </div>
-
           <div className="grid grid-cols-1 md:grid-cols-5 gap-6">
             {timeline.map((t, i) => (
               <div key={t.year} className="bg-white p-6 hover:shadow-lg transition-shadow">
@@ -107,7 +104,6 @@ export default function About() {
             <div className="text-sm text-brand-500 font-medium mb-4 tracking-wider">VALUES</div>
             <h2 className="text-4xl lg:text-5xl font-bold text-ink-900">我们的企业文化</h2>
           </div>
-
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {values.map((v) => (
               <div key={v.title} className="text-center">
@@ -128,7 +124,6 @@ export default function About() {
             <div className="text-sm text-accent-400 font-medium mb-4 tracking-wider">HONORS</div>
             <h2 className="text-4xl lg:text-5xl font-bold">资质荣誉</h2>
           </div>
-
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px bg-ink-700">
             {honors.map((h, i) => (
               <div key={i} className="bg-ink-900 p-8 hover:bg-ink-800 transition-colors">

@@ -13,9 +13,7 @@ export default function Cases() {
   const [activeCategory, setActiveCategory] = useState<'all' | Case['category']>('all');
   const filtered = activeCategory === 'all' ? cases : cases.filter(c => c.category === activeCategory);
 
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
+  useEffect(() => { window.scrollTo(0, 0); }, []);
 
   return (
     <div>

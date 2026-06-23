@@ -22,9 +22,7 @@ export default function Products() {
   const [activeCategory, setActiveCategory] = useState<'all' | ProductCategory>('all');
   const filtered = activeCategory === 'all' ? products : products.filter(p => p.category === activeCategory);
 
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
+  useEffect(() => { window.scrollTo(0, 0); }, []);
 
   return (
     <div>
