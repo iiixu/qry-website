@@ -25,5 +25,4 @@ export const IMAGES = {
   productPneumatic: '/images/products/pneumatic/CBA系列双轴气缸.png',
   productRobot: '/images/products/robot/IR-S3系列SCARA 机器人.PNG',
 };
-
 export default IMAGES;

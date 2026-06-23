@@ -21,9 +21,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
 
     const request = https.request(WEBHOOK_URL, options, (response) => {
       let data = '';
-      response.on('data', (chunk) => {
-        data += chunk;
-      });
+      response.on('data', (chunk) => { data += chunk; });
       response.on('end', () => {
         try {
           const result = JSON.parse(data);
