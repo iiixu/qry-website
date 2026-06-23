@@ -42,9 +42,7 @@ export default function Contact() {
     }
   };
 
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
+  useEffect(() => { window.scrollTo(0, 0); }, []);
 
   return (
     <div>
@@ -124,10 +122,11 @@ export default function Contact() {
                 </div>
                 <button
                   type="submit"
-                  className="w-full py-4 bg-brand-500 text-white font-medium hover:bg-brand-600 transition-colors flex items-center justify-center gap-2"
+                  disabled={submitting}
+                  className="w-full py-4 bg-brand-500 text-white font-medium hover:bg-brand-600 transition-colors flex items-center justify-center gap-2 disabled:opacity-50"
                 >
                   <Send size={16} />
-                  提交咨询
+                  {submitting ? '提交中...' : '提交咨询'}
                 </button>
               </form>
             </div>

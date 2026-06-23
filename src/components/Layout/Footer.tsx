@@ -29,7 +29,7 @@ export default function Footer() {
               </div>
               <div>
                 <div className="font-bold text-xl text-white" style={{ letterSpacing: '0.1em' }}>轻锐洋</div>
-                <div className="text-[10px] tracking-[0.3em] text-ink-400 mt-1">QING RUI YANG · 2016</div>
+                <div className="text-[10px] tracking-[0.3em] text-ink-400 mt-1">QING RUI YANG · 2018</div>
               </div>
             </div>
             <p className="text-ink-300 text-sm leading-relaxed mb-6">
